@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  text-align: center;
+  /* text-align:centre; will center everything in the parent element that DOES NOT HAVE A WIDTH SET */
+  font-family: 'Merriweather', serif;
+  font-color: #40514E;
+}
+
+h1 {
+  /* if it's a block element and it does have a width set, you need to use "auto" in margin  */
+  /* margin: 0 auto;
+  width: 10%; */
+  color: #66BFBF;
+  /* line-height: 1.4; */
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  font-size: 90px;
+  /* If we use "em" or "%" (dynamic sizes) to determine font-size, that is inherited from the parent. For example, if body font-size was 16, it would be relative to that 16. If we use "px" (static sizes), it always stays that size. Using "rem" means "root em". This means it doesn't matter what the parent size is, it will be scaled to the root size, which is 16px*/
+}
+
+h2 {
+  color: #66BFBF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+h3 {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+  width: 5%;
+  border: 6px dotted Grey;
+  border-bottom: none;
+  margin: 80px auto;
+}
+
+.specialist {
+  text-decoration: underline;
+}
+
+.top-container {
+  background-color: #Eaf6f6;
+  padding-top: 100px;
+  position: relative;
+}
+
+.middle-container {
+  /* background-color: red;
+  height: 200px;
+  width: 200px; */
+  margin: 100px 0;
+}
+
+.bottom-container {
+  /* background-color: blue;
+  height: 200px;
+  width: 200px; */
+  background-color: #66BFBF;
+  padding: 40px;
+}
+
+.bottom-cloud {
+  /* aboslute positioning needs to be relative to parent element. By default, it is set to body. However, we've set their parent of "top-container" to be relative */
+  bottom: 300px;
+  left: 300px;
+  position: absolute;
+}
+
+.top-cloud {
+  position: absolute;
+  top: 50px;
+  right: 300px;
+}
+
+.profile-picture {
+  margin: 20px;
+  width: 50%;
+  border-radius: 50%;
+}
+
+a {
+  color: #11999E;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+.skill-coding {
+  border-radius: 50%;
+  width: 15%;
+  /* float is a commonly abused and misused property and should only be used for wrapping something around another element. Do no use it for positioning */
+  float: left;
+  margin-right: 30px;
+}
+
+.skill-support {
+  border-radius: 50%;
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.profile {
+  width: 35%;
+  margin: 0 auto;
+}
+
+.contact-me {
+  width: 35%;
+  margin: 100px auto;
+  line-height: 2;
+}
+
+.copyright {
+  color: #EAF6F6;
+  margin: 5%;
+}
+
+.butn {
+  background: #66bfbf;
+  background-image: -webkit-linear-gradient(top, #66bfbf, #2980b9);
+  background-image: -moz-linear-gradient(top, #66bfbf, #2980b9);
+  background-image: -ms-linear-gradient(top, #66bfbf, #2980b9);
+  background-image: -o-linear-gradient(top, #66bfbf, #2980b9);
+  background-image: linear-gradient(to bottom, #66bfbf, #2980b9);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin: 50px;
+}
+
+.butn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
